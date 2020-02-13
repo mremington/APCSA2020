@@ -8,6 +8,6 @@ public class Circle
 {
 	public static double area( double radius )
 	{
-		return Math.PI*Math.pow(radius,2);
+		return Math.PI * Math.pow(radius,2);
 	}
 }

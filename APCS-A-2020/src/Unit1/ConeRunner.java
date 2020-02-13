@@ -9,6 +9,11 @@ public class ConeRunner
 {
 	public static void main( String[] args )
 	{
+		Cone c = new Cone();
+		c.test();
+		
+		System.out.println(c);
+		
 		System.out.printf( "%.2f\n", Cone.volume( 4, 4) );
 		System.out.printf( "%.2f\n", Cone.volume( 4, 3) );
 		System.out.printf( "%.2f\n", Cone.volume( 9, 3) );
