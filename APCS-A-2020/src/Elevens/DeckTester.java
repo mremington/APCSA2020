@@ -10,7 +10,7 @@ public class DeckTester {
 	 */
 	public static void main(String[] args) {
 		// Note: Student solutions will vary.  The following is an example.
-
+ 
 		String[] ranks = {"jack", "queen", "king"};
 		String[] suits = {"blue", "red"};
 		int[] pointValues = {11, 12, 13};

@@ -2,7 +2,7 @@ package Elevens;
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
-
+ 
 public class Card
 {
 	public static final String FACES[] = {"ZERO","ACE","TWO","THREE","FOUR",

@@ -9,7 +9,7 @@ public class Shuffler {
 	 * to each sorting procedure.
 	 */
 	private static final int SHUFFLE_COUNT = 1;
-
+ 
 	/**
 	 * The number of values to shuffle.
 	 */

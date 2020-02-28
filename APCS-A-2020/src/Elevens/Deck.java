@@ -16,7 +16,7 @@ class Deck{
 	private List<Card> cards;
 	private int top;
 	private int size;
-
+ 
    //make a Deck constructor
 	public Deck() {
    	//refer cards to new ArrayList

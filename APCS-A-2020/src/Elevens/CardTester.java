@@ -10,7 +10,7 @@ public class CardTester {
 	 */
 	public static void main(String[] args) {
 		// Note: Student solutions will vary.  The following is an example.
-
+ 
 		Card aceClubs1 = new Card("ace", "clubs", 1);
 		Card aceClubs2 = new Card("ace", "clubs", 1);
 		Card sixHearts = new Card("6", "hearts", 6);
