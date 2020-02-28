@@ -17,6 +17,13 @@ public class Card
 	private int face;
 	
 	private int pointValue;
+	
+	public Card() {
+		setSuit("NULL");
+		setRank("NULL");
+		setFace(0);
+		setPointValue(0);
+	}
 
   	//constructors
 	public Card(String cardSuit, int cardFaceValue) {
@@ -65,8 +72,6 @@ public class Card
 	}
 
 
-
-
   	//toString
 	public String toString() {
 		if(pointValue==0) {
@@ -75,6 +80,15 @@ public class Card
 		else {
 			return rank + " of " + suit + " (point value = " + pointValue + ")";
 		}
+	}
+
+	public boolean matches(Card otherCard) {
+		// TODO Auto-generated method stub
+		if(this.getSuit().equals(otherCard) && this.getRank().equals(otherCard) && this.getPointValue()==otherCard.getPointValue())
+			return true;
+		else if(this.getSuit().equals(otherCard.getSuit()) && this.getFace()==otherCard.getFace())
+			return true;
+		return false;
 	}
 
  }
