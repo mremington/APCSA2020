@@ -1,8 +1,4 @@
-package Buggy5;
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/mremington/APCSA2020.git
+package Buggy1;
 /**
  * This is a class that tests the Deck class using assert statements.
  */
@@ -14,8 +10,8 @@ public class DeckTester {
 	 *	@param args is not used.
 	 */
 	public static void main(String[] args) {
-		test2CardDeck();
 		test1CardDeck();
+		test2CardDeck();
 		testShuffle();
 		System.out.println("All tests passed!");
 	}

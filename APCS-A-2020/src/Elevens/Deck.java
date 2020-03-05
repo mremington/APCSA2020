@@ -9,7 +9,11 @@ import java.util.Arrays;
 import java.util.Collections;
 
 //make a Deck class
+<<<<<<< HEAD
+public class Deck{
+=======
 class Deck{
+>>>>>>> branch 'master' of https://github.com/mremington/APCSA2020.git
 	public static final int NUMCARDS = 52;
 	public static String[] SUITS = "CLUBS HEARTS DIAMONDS SPADES".split(" ");
 	
