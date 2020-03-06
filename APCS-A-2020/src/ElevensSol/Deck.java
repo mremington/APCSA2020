@@ -38,7 +38,7 @@ public class Deck {
 			}
 		}
 		size = cards.size();
-		shuffle();
+		//shuffle();
 	}
 
 
@@ -58,21 +58,21 @@ public class Deck {
 		return size;
 	}
 
-	/**
-	 * Randomly permute the given collection of cards
-	 * and reset the size to represent the entire deck.
-	 */
-	public void shuffle() {
-		for (int k = cards.size() - 1; k > 0; k--) {
-			int howMany = k + 1;
-			int start = 0;
-			int randPos = (int) (Math.random() * howMany) + start;
-			Card temp = cards.get(k);
-			cards.set(k, cards.get(randPos));
-			cards.set(randPos, temp);
-		}
-		size = cards.size();
-	}
+//	/**
+//	 * Randomly permute the given collection of cards
+//	 * and reset the size to represent the entire deck.
+//	 */
+//	public void shuffle() {
+//		for (int k = cards.size() - 1; k > 0; k--) {
+//			int howMany = k + 1;
+//			int start = 0;
+//			int randPos = (int) (Math.random() * howMany) + start;
+//			Card temp = cards.get(k);
+//			cards.set(k, cards.get(randPos));
+//			cards.set(randPos, temp);
+//		}
+//		size = cards.size();
+//	}
 
 	/**
 	 * Deals a card from this deck.

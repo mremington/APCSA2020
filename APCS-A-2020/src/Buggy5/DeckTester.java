@@ -1,5 +1,8 @@
 package Buggy5;
+<<<<<<< HEAD
+=======
 
+>>>>>>> branch 'master' of https://github.com/mremington/APCSA2020.git
 /**
  * This is a class that tests the Deck class using assert statements.
  */

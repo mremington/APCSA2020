@@ -84,7 +84,7 @@ public class Card
 
 	public boolean matches(Card otherCard) {
 		// TODO Auto-generated method stub
-		if(this.getSuit().equals(otherCard) && this.getRank().equals(otherCard) && this.getPointValue()==otherCard.getPointValue())
+		if(this.getSuit().equals(otherCard.getSuit()) && this.getRank().equals(otherCard.getRank()) && this.getPointValue()==otherCard.getPointValue())
 			return true;
 		else if(this.getSuit().equals(otherCard.getSuit()) && this.getFace()==otherCard.getFace())
 			return true;

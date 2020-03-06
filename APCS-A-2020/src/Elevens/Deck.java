@@ -9,11 +9,9 @@ import java.util.Arrays;
 import java.util.Collections;
 
 //make a Deck class
-<<<<<<< HEAD
+
 public class Deck{
-=======
-class Deck{
->>>>>>> branch 'master' of https://github.com/mremington/APCSA2020.git
+
 	public static final int NUMCARDS = 52;
 	public static String[] SUITS = "CLUBS HEARTS DIAMONDS SPADES".split(" ");
 	
@@ -26,16 +24,19 @@ class Deck{
    	//refer cards to new ArrayList
 		cards = new ArrayList<Card>();
    	//set top to the top of the deck 51
-		top = 51;
+		//top = 51;
    	
    	//loop through all suits
 		for(int s = 0; s<SUITS.length; s++) {
    		//loop through all faces 1 to 13
 			for(int f = 1; f<=13; f++) {
-   			//add a new TwentyOneCard to the deck
+   			//add a new Card to the deck
 				cards.add(new Card(SUITS[s] , f));
 			}
 		}
+		size = cards.size();
+		top = size-1;
+		//shuffle();
 		
 	}
 	
@@ -45,9 +46,9 @@ class Deck{
 		
 		//loop through all suits
 				for(int s = 0; s<suits.length; s++) {
-		   		//loop through all faces 1 to 13
+		   		//loop through all ranks
 					for(int r = 0; r<ranks.length; r++) {
-		   			//add a new TwentyOneCard to the deck
+		   			//add a new Card to the deck
 						cards.add(new Card(ranks[r], suits[s] , pointValues[r]));
 					}
 				}
@@ -82,12 +83,14 @@ class Deck{
    //write a shuffle() method
 	public void shuffle() {
 		//use Colletions.shuffle
+		//resetTop();
 		Collections.shuffle(cards);
 	}
    	
    	//reset the top card
 	public void resetTop() {
-		top = size()-1;
+		size = cards.size();
+		top = size-1;
 	}
 	
 	public String toString() {
