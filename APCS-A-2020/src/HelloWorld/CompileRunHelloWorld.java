@@ -11,7 +11,6 @@ public class CompileRunHelloWorld {
 //https://www.journaldev.com/937/compile-run-java-program-another-java-program
 	public static void main(String[] args) {
 
-
 		for (int i = 1; i <= 4; i++) {
 
 			try {
@@ -27,11 +26,6 @@ public class CompileRunHelloWorld {
 			}
 		}
 
-		
-
-
 	}
-
-
 
 }
