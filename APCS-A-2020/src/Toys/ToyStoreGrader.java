@@ -90,7 +90,6 @@ public class ToyStoreGrader
 				System.out.println("\n");
 				
 			} catch (ReflectiveOperationException | SecurityException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
