@@ -25,5 +25,7 @@ public class WestNile {
 	public void setVirusTotal(int virusTotal) {
 		this.virusTotal = virusTotal;
 	}
+	
+	
 
 }
