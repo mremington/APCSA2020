@@ -14,5 +14,14 @@ public class FancyWordsRunner
 {
 	public static void main( String args[] ) throws IOException
 	{
+		Scanner file = new Scanner(new File("src/fancywords.dat"));
+		int size = file.nextInt();
+		file.nextLine();
+		for(int i = 0; i<size; i++)
+		{
+			String sentence = file.nextLine();
+			FancyWords fw = new FancyWords( sentence );
+			System.out.println( fw );
+		}
 	}
 }

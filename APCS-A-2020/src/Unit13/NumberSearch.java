@@ -13,6 +13,20 @@ public class NumberSearch
 {
 	public static int getNextLargest(int[] numArray, int searchNum)
 	{
-		return -1;
+		Arrays.sort(numArray);
+		
+		int nextPosition = 0;
+		
+		//Arrays.binarySearch() will return -1 + -(where it should/would be if it was present)
+		if(Arrays.binarySearch(numArray,searchNum) < 0) {
+			//subtract 1 to adjust for the length of the array given the index starts at 0
+			nextPosition= Math.abs(Arrays.binarySearch(numArray,searchNum)) -1;
+		}
+		else {
+			nextPosition= Arrays.binarySearch(numArray,searchNum) + 1;
+		}
+		
+		
+		return numArray[ nextPosition ];
 	}
 }

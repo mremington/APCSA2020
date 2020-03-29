@@ -18,6 +18,19 @@ public class NumberSearchRunner
 			out.println("The next largest value after " + find + " is " + NumberSearch.getNextLargest(array, find) + "\n");
 
 			//add more case
+			int[] array2 = {10, 30, 20, 40, 50, 15};
+			int find2 = 12;
+			out.println("The next largest value after " + find2 + " is " + NumberSearch.getNextLargest(array2, find2) + "\n");
+			
+			int[] array3 = {3, 4, 5, 6, 8, 9, 10, 11, 2, 3, 4, 65};
+			int find3 = 35;
+			out.println("The next largest value after " + find3 + " is " + NumberSearch.getNextLargest(array3, find3) + "\n");
+			
+			int[] array4 = {100, 110, 1000, 25000, 65535};
+			int find4 = 32767;
+			out.println("The next largest value after " + find4 + " is " + NumberSearch.getNextLargest(array4, find4) + "\n");
+			
+			
 	}
 }
 
