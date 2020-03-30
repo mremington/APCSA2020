@@ -49,7 +49,7 @@ public class Student implements Comparable<Student>{
 	}
 
 	public double getAverageMinusLow() {
-		return getAverage() - myGrades.getLowGrade();
+		return ( myGrades.getSum()-getLowGrade() )  / ( getNumGrades()-1 ) ;
 	}
 
 	public double getHighGrade() {
