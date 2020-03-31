@@ -38,7 +38,7 @@ public class DNAHashSet {
 	    }
 		
 		getNmers(n,s1, s1List);
-		getForwardAndReverse3Mers(n,s2, s2List, s2RevCompList);
+		getForwardAndReverseNmers(n,s2, s2List, s2RevCompList);
 		
 		combineLists(s1List, s2List, s2RevCompList);
 		
@@ -68,7 +68,7 @@ public class DNAHashSet {
 		}
 	}//end get3Mers method
 	
-	public static void getForwardAndReverse3Mers(int n, String s, ArrayList list, ArrayList rList) {
+	public static void getForwardAndReverseNmers(int n, String s, ArrayList list, ArrayList rList) {
 		//System.out.println("Forward and Reverse " + n+ "-mers:");
 		for(int i = 0; i < s.length() - (n-1); i++) {
 			String sequence = s.substring(i,i+n);
